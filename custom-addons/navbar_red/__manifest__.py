@@ -8,16 +8,14 @@
     """,
     'author': 'Coralbound',
     'website': 'https://coralbound.com',
+    'license': 'LGPL-3',
     'depends': ['web'],
-    'data': [
-        'views/assets.xml',
-    ],
     'assets': {
         'web.assets_backend': [
             'navbar_red/static/src/css/navbar.css',
         ],
     },
     'installable': True,
-    'application': False,
+    'application': True,
     'auto_install': False,
 }
