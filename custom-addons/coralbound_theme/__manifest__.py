@@ -8,22 +8,14 @@
         - Custom primary blue color scheme
         - Custom navbar styling
         - Modern UI improvements
-        - Custom login page design
     """,
     'author': 'Coralbound',
     'website': 'https://coralbound.com',
     'license': 'LGPL-3',
     'depends': ['web', 'base'],
-    'data': [
-        'views/login_templates.xml',
-    ],
     'assets': {
         'web.assets_backend': [
             'coralbound_theme/static/src/css/theme.css',
-            'coralbound_theme/static/src/css/login.css',
-        ],
-        'web.assets_frontend': [
-            'coralbound_theme/static/src/css/login.css',
         ],
     },
     'installable': True,
