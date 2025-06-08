@@ -1,7 +1,133 @@
-/* Primary Colors */
+/* Primary Colors and Theme Variables */
 :root {
-  --primary-color: #2b6cb0; /* Change this to your primary color */
-  --secondary-color: #4299e1; /* Change this to your secondary color */
-  --primary-hover: #2c5282; /* Darker shade for hover states */
-  --secondary-hover: #3182ce; /* Darker shade for hover states */
+  /* Base Colors */
+  --primary-color: #2b6cb0 !important; /* Change this to your primary color */
+  --secondary-color: #4299e1 !important; /* Change this to your secondary color */
+  --primary-hover: #2c5282 !important; /* Darker shade for hover states */
+  --secondary-hover: #3182ce !important; /* Darker shade for hover states */
+
+  /* Gray Scale */
+  --100: #f8f9fa !important;
+  --200: #e9ecef !important;
+  --300: #dee2e6 !important;
+  --400: #ced4da !important;
+  --500: #adb5bd !important;
+  --600: #6c757d !important;
+  --700: #495057 !important;
+  --800: #343a40 !important;
+  --900: #212529 !important;
+
+  /* White Opacity */
+  --white-85: rgba(255, 255, 255, 0.85) !important;
+  --white-75: rgba(255, 255, 255, 0.75) !important;
+  --white-50: rgba(255, 255, 255, 0.5) !important;
+  --white-25: rgba(255, 255, 255, 0.25) !important;
+
+  /* Black Opacity */
+  --black-75: rgba(0, 0, 0, 0.75) !important;
+  --black-50: rgba(0, 0, 0, 0.5) !important;
+  --black-25: rgba(0, 0, 0, 0.25) !important;
+  --black-15: rgba(0, 0, 0, 0.15) !important;
+
+  /* Component Colors - CC1 */
+  --o-cc1-text: #000000 !important;
+  --o-cc1-headings: #000000 !important;
+  --o-cc1-h2: #000000 !important;
+  --o-cc1-h3: #000000 !important;
+  --o-cc1-h4: #000000 !important;
+  --o-cc1-h5: #000000 !important;
+  --o-cc1-h6: #000000 !important;
+  --o-cc1-link: #2b6cb0 !important;
+  --o-cc1-btn-primary: #2b6cb0 !important;
+  --o-cc1-btn-primary-text: #ffffff !important;
+  --o-cc1-btn-primary-border: #2b6cb0 !important;
+  --o-cc1-btn-secondary: #dee2e6 !important;
+  --o-cc1-btn-secondary-text: #000000 !important;
+  --o-cc1-btn-secondary-border: #dee2e6 !important;
+
+  /* Component Colors - CC2 */
+  --o-cc2-text: #000000 !important;
+  --o-cc2-h2: #111827 !important;
+  --o-cc2-h3: #111827 !important;
+  --o-cc2-h4: #111827 !important;
+  --o-cc2-h5: #111827 !important;
+  --o-cc2-h6: #111827 !important;
+  --o-cc2-link: #2c5282 !important;
+  --o-cc2-btn-primary: #2b6cb0 !important;
+  --o-cc2-btn-primary-text: #ffffff !important;
+  --o-cc2-btn-primary-border: #2b6cb0 !important;
+  --o-cc2-btn-secondary: #dee2e6 !important;
+  --o-cc2-btn-secondary-text: #000000 !important;
+  --o-cc2-btn-secondary-border: #dee2e6 !important;
+
+  /* Component Colors - CC3 */
+  --o-cc3-text: #ffffff !important;
+  --o-cc3-headings: #ffffff !important;
+  --o-cc3-h2: #ffffff !important;
+  --o-cc3-h3: #ffffff !important;
+  --o-cc3-h4: #ffffff !important;
+  --o-cc3-h5: #ffffff !important;
+  --o-cc3-h6: #ffffff !important;
+  --o-cc3-link: #4299e1 !important;
+  --o-cc3-btn-primary: #2b6cb0 !important;
+  --o-cc3-btn-primary-text: #ffffff !important;
+  --o-cc3-btn-primary-border: #2b6cb0 !important;
+  --o-cc3-btn-secondary-text: #000000 !important;
+  --o-cc3-btn-secondary-border: #f3f2f2 !important;
+
+  /* Component Colors - CC4 */
+  --o-cc4-text: #ffffff !important;
+  --o-cc4-headings: #ffffff !important;
+  --o-cc4-h2: #ffffff !important;
+  --o-cc4-h3: #ffffff !important;
+  --o-cc4-h4: #ffffff !important;
+  --o-cc4-h5: #ffffff !important;
+  --o-cc4-h6: #ffffff !important;
+  --o-cc4-link: #2b6cb0 !important;
+  --o-cc4-btn-primary-text: #ffffff !important;
+  --o-cc4-btn-primary-border: #2b6cb0 !important;
+  --o-cc4-btn-secondary-text: #000000 !important;
+  --o-cc4-btn-secondary-border: #f3f2f2 !important;
+
+  /* Component Colors - CC5 */
+  --o-cc5-text: #ffffff !important;
+  --o-cc5-h2: #ffffff !important;
+  --o-cc5-h3: #ffffff !important;
+  --o-cc5-h4: #ffffff !important;
+  --o-cc5-h5: #ffffff !important;
+  --o-cc5-h6: #ffffff !important;
+  --o-cc5-link: #4299e1 !important;
+  --o-cc5-btn-primary: #2b6cb0 !important;
+  --o-cc5-btn-primary-text: #ffffff !important;
+  --o-cc5-btn-primary-border: #2b6cb0 !important;
+  --o-cc5-btn-secondary-text: #000000 !important;
+  --o-cc5-btn-secondary-border: #f3f2f2 !important;
+
+  /* Layout */
+  --o-grid-gutter-width: 32px !important;
+  --o-md-container-max-width: 720px !important;
+
+  /* Website Editor */
+  --o-we-content-to-translate-color: rgba(255, 255, 90, 0.5) !important;
+  --o-we-translated-content-color: rgba(120, 215, 110, 0.5) !important;
+
+  /* Typography */
+  --o-system-fonts: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Ubuntu, 'Noto Sans', Arial, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji' !important;
+  --display-1-font-size: 5rem !important;
+  --display-2-font-size: 4.5rem !important;
+  --display-3-font-size: 4rem !important;
+  --display-4-font-size: 3.5rem !important;
+  --h1-font-size: 1.75rem !important;
+  --h2-font-size: 1.3125rem !important;
+  --h3-font-size: 1.1375rem !important;
+  --h4-font-size: 1.05rem !important;
+  --h5-font-size: 0.9625rem !important;
+  --h6-font-size: 0.875rem !important;
+  --font-size-base: 0.875rem !important;
+  --small-font-size: 0.8125rem !important;
+  --small-twelve-font-size: 0.75em !important;
+  --small-ten-font-size: 0.625em !important;
+  --small-eight-font-size: 0.5em !important;
 }
