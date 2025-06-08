@@ -131,3 +131,48 @@
   --small-ten-font-size: 0.625em !important;
   --small-eight-font-size: 0.5em !important;
 }
+
+/* Navbar Styles */
+.o_main_navbar {
+  border-bottom: 1px solid var(--primary-hover) !important;
+  background: var(--primary-color) !important;
+}
+
+.o_main_navbar .o_menu_sections .o_nav_entry,
+.o_main_navbar .o_menu_sections .dropdown-toggle {
+  background: var(--primary-color) !important;
+  border: 1px solid transparent !important;
+}
+
+.btn-primary {
+  color: #ffffff;
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+}
+
+.btn-primary:hover {
+  color: #ffffff;
+  background-color: var(--primary-hover) !important;
+  border-color: var(--primary-hover) !important;
+}
+
+.btn-info {
+  color: #ffffff;
+  background-color: var(--secondary-color) !important;
+  border-color: var(--secondary-color) !important;
+}
+
+.btn-info:hover {
+  color: #ffffff;
+  background-color: var(--secondary-hover) !important;
+  border-color: var(--secondary-hover) !important;
+}
+
+code {
+  color: var(--primary-color) !important;
+}
+
+.text-primary {
+  --color: RGBA(43, 108, 176, var(--text-opacity, 1));
+  color: var(--color) !important;
+}
