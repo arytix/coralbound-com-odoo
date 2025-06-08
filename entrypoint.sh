@@ -8,6 +8,10 @@ while ! nc -z ${ODOO_DATABASE_HOST} ${ODOO_DATABASE_PORT} 2>&1; do sleep 1; done
 
 echo Database is now available
 
+# Ensure filestore directory exists and has proper permissions
+mkdir -p /var/lib/odoo/filestore
+chown -R odoo:odoo /var/lib/odoo
+
 exec odoo \
     --http-port="${PORT}" \
     --init=all \
@@ -23,4 +27,6 @@ exec odoo \
     --smtp-user="${ODOO_SMTP_USER}" \
     --smtp-password="${ODOO_SMTP_PASSWORD}" \
     --email-from="${ODOO_EMAIL_FROM}" \
-    --data-dir="/var/lib/odoo" 2>&1
+    --data-dir="/var/lib/odoo" \
+    --addons-path="/mnt/extra-addons" \
+    --filestore="/var/lib/odoo/filestore" 2>&1
