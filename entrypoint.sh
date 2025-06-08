@@ -26,4 +26,5 @@ exec odoo \
     --smtp-user="${ODOO_SMTP_USER}" \
     --smtp-password="${ODOO_SMTP_PASSWORD}" \
     --email-from="${ODOO_EMAIL_FROM}" \
-    --data-dir="/var/lib/odoo" 2>&1
+    --data-dir="/var/lib/odoo" \
+    --addons-path="/mnt/custom-addons,/usr/lib/python3/dist-packages/odoo/addons" 2>&1

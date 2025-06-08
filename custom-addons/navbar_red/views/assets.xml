@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="assets_backend" name="navbar_red assets" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <link rel="stylesheet" type="text/css" href="/navbar_red/static/src/css/navbar.css"/>
+            </xpath>
+        </template>
+    </data>
+</odoo>
