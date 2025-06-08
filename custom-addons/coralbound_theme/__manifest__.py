@@ -20,6 +20,10 @@
     'assets': {
         'web.assets_backend': [
             'coralbound_theme/static/src/css/theme.css',
+            'coralbound_theme/static/src/css/login.css',
+        ],
+        'web.assets_frontend': [
+            'coralbound_theme/static/src/css/login.css',
         ],
     },
     'installable': True,

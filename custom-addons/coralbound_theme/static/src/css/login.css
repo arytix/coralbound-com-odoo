@@ -1,0 +1,97 @@
+/* Login Page Styling */
+
+body.o_login {
+  background: linear-gradient(135deg, #2b6cb0 0%, #4299e1 100%) !important;
+  min-height: 100vh;
+}
+
+.o_login_form {
+  background-color: white !important;
+  border-radius: 12px !important;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15) !important;
+  padding: 2.5rem !important;
+  max-width: 420px !important;
+  margin: 2rem auto !important;
+  border: none !important;
+}
+
+.o_login_form .form-control {
+  border-radius: 8px !important;
+  border: 2px solid #e9ecef !important;
+  padding: 12px 16px !important;
+  font-size: 16px !important;
+  margin-bottom: 1rem !important;
+}
+
+.o_login_form .form-control:focus {
+  border-color: #2b6cb0 !important;
+  box-shadow: 0 0 0 0.2rem rgba(43, 108, 176, 0.25) !important;
+}
+
+.o_login_form .btn-primary {
+  background-color: #2b6cb0 !important;
+  border-color: #2b6cb0 !important;
+  padding: 12px 24px !important;
+  font-weight: 600 !important;
+  border-radius: 8px !important;
+  width: 100% !important;
+  font-size: 16px !important;
+}
+
+.o_login_form .btn-primary:hover {
+  background-color: #2c5282 !important;
+  border-color: #2c5282 !important;
+}
+
+.o_login_logo {
+  text-align: center !important;
+  margin-bottom: 2rem !important;
+}
+
+.o_login_logo img {
+  max-height: 80px !important;
+}
+
+/* Custom welcome section */
+.coralbound-welcome {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.coralbound-welcome h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.coralbound-welcome p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin: 0;
+}
+
+/* Hide powered by */
+div:contains('Powered by'),
+small:contains('Powered by'),
+.text-center small {
+  display: none !important;
+}
+
+/* Footer styling */
+.coralbound-footer {
+  text-align: center;
+  margin-top: 2rem;
+  color: white;
+  opacity: 0.8;
+}
+
+/* Database manager styling */
+.o_database_list {
+  background-color: white !important;
+  border-radius: 12px !important;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15) !important;
+  padding: 2rem !important;
+  border: none !important;
+}
