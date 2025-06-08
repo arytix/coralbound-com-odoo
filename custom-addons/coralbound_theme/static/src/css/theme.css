@@ -86,8 +86,20 @@ a:hover {
   color: white !important;
 }
 
+.dropdown-item:hover,
+.dropdown-item:focus {
+  color: white !important;
+  background-color: var(--primary-color) !important;
+}
+
+.o-dropdown--menu .dropdown-toggle.focus,
+.o-dropdown--menu .dropdown-item.focus {
+  color: white !important;
+  background-color: var(--primary-color) !important;
+}
+
 .dropdown-item {
-  color: var(--primary-color) !important;
+  color: white !important;
 }
 
 .o_main_navbar a:hover,
