@@ -14,12 +14,17 @@
     'website': 'https://coralbound.com',
     'license': 'LGPL-3',
     'depends': ['web'],
+    'data': [
+        'views/templates.xml',
+    ],
     'assets': {
         'web.assets_backend': [
             'coralbound_theme/static/src/css/theme.css',
-            'coralbound_theme/static/src/css/favicon.css',
         ],
     },
+    'controllers': [
+        'controllers/favicon_controller.py'
+    ],
     'installable': True,
     'application': True,
     'auto_install': False,
