@@ -1,10 +1,13 @@
 {
-    'name': 'Red Navbar',
+    'name': 'Coralbound Theme',
     'version': '1.0',
     'category': 'Website',
-    'summary': 'Changes the Odoo top bar color to red',
+    'summary': 'Custom theme for Coralbound Odoo instance',
     'description': """
-        This module changes the Odoo top navigation bar color to red.
+        This module customizes the Odoo interface with Coralbound branding:
+        - Custom logo
+        - Primary and secondary colors
+        - Custom styling
     """,
     'author': 'Coralbound',
     'website': 'https://coralbound.com',
@@ -12,7 +15,7 @@
     'depends': ['web'],
     'assets': {
         'web.assets_backend': [
-            'navbar_red/static/src/css/navbar.css',
+            'coralbound_theme/static/src/css/theme.css',
         ],
     },
     'installable': True,

@@ -1,0 +1,133 @@
+/* Primary Colors */
+:root {
+  --primary-color: #2b6cb0; /* Change this to your primary color */
+  --secondary-color: #4299e1; /* Change this to your secondary color */
+  --primary-hover: #2c5282; /* Darker shade for hover states */
+  --secondary-hover: #3182ce; /* Darker shade for hover states */
+}
+
+/* Main Navbar */
+.o_main_navbar {
+  background-color: var(--primary-color) !important;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover) !important;
+  border-color: var(--primary-hover) !important;
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color) !important;
+  border-color: var(--secondary-color) !important;
+}
+
+.btn-secondary:hover {
+  background-color: var(--secondary-hover) !important;
+  border-color: var(--secondary-hover) !important;
+}
+
+/* Links */
+a {
+  color: var(--primary-color) !important;
+}
+
+a:hover {
+  color: var(--primary-hover) !important;
+}
+
+/* Form elements */
+.o_form_view
+  .o_form_statusbar
+  > .o_statusbar_status
+  > .o_arrow_button:not(.disabled) {
+  background-color: var(--primary-color) !important;
+}
+
+.o_form_view
+  .o_form_statusbar
+  > .o_statusbar_status
+  > .o_arrow_button:not(.disabled):hover {
+  background-color: var(--primary-hover) !important;
+}
+
+/* List views */
+.o_list_view thead {
+  background-color: var(--primary-color) !important;
+}
+
+.o_list_view thead th {
+  color: white !important;
+}
+
+/* Kanban views */
+.o_kanban_view .o_kanban_record {
+  border-color: var(--primary-color) !important;
+}
+
+/* Calendar views */
+.o_calendar_view .o_calendar_widget .fc-timeGridWeek-view .fc-widget-header {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+}
+
+/* Custom Logo */
+.o_main_navbar .o_menu_brand {
+  background-image: url('/coralbound_theme/static/src/img/logo.jpg') !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  width: 200px !important; /* Adjust based on your logo size */
+  height: 40px !important; /* Adjust based on your logo size */
+}
+
+/* Hide default Odoo logo text */
+.o_main_navbar .o_menu_brand span {
+  display: none !important;
+}
+
+/* Dropdown menus */
+.o_main_navbar .dropdown-menu {
+  background-color: var(--primary-color) !important;
+}
+
+.o_main_navbar .dropdown-menu > li > a {
+  color: white !important;
+}
+
+.o_main_navbar .dropdown-menu > li > a:hover {
+  background-color: var(--primary-hover) !important;
+}
+
+/* Search bar */
+.o_searchview {
+  border-color: var(--primary-color) !important;
+}
+
+/* Tabs */
+.nav-tabs > li.active > a {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+}
+
+/* Progress bars */
+.progress-bar {
+  background-color: var(--primary-color) !important;
+}
+
+/* Badges */
+.badge {
+  background-color: var(--primary-color) !important;
+}
+
+/* Alerts */
+.alert-info {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+  color: white !important;
+}
