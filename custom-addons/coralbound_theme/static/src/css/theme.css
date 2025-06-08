@@ -1,133 +1,211 @@
-/* Primary Colors and Theme Variables */
+/* Primary Colors */
 :root {
-  /* Base Colors */
   --primary-color: #2b6cb0; /* Change this to your primary color */
   --secondary-color: #4299e1; /* Change this to your secondary color */
   --primary-hover: #2c5282; /* Darker shade for hover states */
   --secondary-hover: #3182ce; /* Darker shade for hover states */
+}
 
-  /* Gray Scale */
-  --100: #f8f9fa;
-  --200: #e9ecef;
-  --300: #dee2e6;
-  --400: #ced4da;
-  --500: #adb5bd;
-  --600: #6c757d;
-  --700: #495057;
-  --800: #343a40;
-  --900: #212529;
+Text colors .text-primary {
+  --color: RGBA(43, 108, 176, var(--text-opacity, 1));
+  color: var(--color) !important;
+}
 
-  /* White Opacity */
-  --white-85: rgba(255, 255, 255, 0.85);
-  --white-75: rgba(255, 255, 255, 0.75);
-  --white-50: rgba(255, 255, 255, 0.5);
-  --white-25: rgba(255, 255, 255, 0.25);
+/* Main Navbar */
+.o_main_navbar {
+  background-color: var(--primary-color) !important;
+}
 
-  /* Black Opacity */
-  --black-75: rgba(0, 0, 0, 0.75);
-  --black-50: rgba(0, 0, 0, 0.5);
-  --black-25: rgba(0, 0, 0, 0.25);
-  --black-15: rgba(0, 0, 0, 0.15);
+/* Menu Sections */
+.o_main_navbar .o_menu_sections .o_nav_entry,
+.o_main_navbar .o_menu_sections .dropdown-toggle {
+  background: var(--primary-color) !important;
+  border: 1px solid transparent !important;
+  color: white !important;
+}
 
-  /* Component Colors - CC1 */
-  --o-cc1-text: #000000;
-  --o-cc1-headings: #000000;
-  --o-cc1-h2: #000000;
-  --o-cc1-h3: #000000;
-  --o-cc1-h4: #000000;
-  --o-cc1-h5: #000000;
-  --o-cc1-h6: #000000;
-  --o-cc1-link: #2b6cb0;
-  --o-cc1-btn-primary: #2b6cb0;
-  --o-cc1-btn-primary-text: #ffffff;
-  --o-cc1-btn-primary-border: #2b6cb0;
-  --o-cc1-btn-secondary: #dee2e6;
-  --o-cc1-btn-secondary-text: #000000;
-  --o-cc1-btn-secondary-border: #dee2e6;
+.o_main_navbar .o_menu_sections .o_nav_entry:hover,
+.o_main_navbar .o_menu_sections .dropdown-toggle:hover {
+  background: var(--primary-hover) !important;
+  color: white !important;
+}
 
-  /* Component Colors - CC2 */
-  --o-cc2-text: #000000;
-  --o-cc2-h2: #111827;
-  --o-cc2-h3: #111827;
-  --o-cc2-h4: #111827;
-  --o-cc2-h5: #111827;
-  --o-cc2-h6: #111827;
-  --o-cc2-link: #2c5282;
-  --o-cc2-btn-primary: #2b6cb0;
-  --o-cc2-btn-primary-text: #ffffff;
-  --o-cc2-btn-primary-border: #2b6cb0;
-  --o-cc2-btn-secondary: #dee2e6;
-  --o-cc2-btn-secondary-text: #000000;
-  --o-cc2-btn-secondary-border: #dee2e6;
+/* Buttons */
+.btn-primary {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+  color: white !important;
+}
 
-  /* Component Colors - CC3 */
-  --o-cc3-text: #ffffff;
-  --o-cc3-headings: #ffffff;
-  --o-cc3-h2: #ffffff;
-  --o-cc3-h3: #ffffff;
-  --o-cc3-h4: #ffffff;
-  --o-cc3-h5: #ffffff;
-  --o-cc3-h6: #ffffff;
-  --o-cc3-link: #4299e1;
-  --o-cc3-btn-primary: #2b6cb0;
-  --o-cc3-btn-primary-text: #ffffff;
-  --o-cc3-btn-primary-border: #2b6cb0;
-  --o-cc3-btn-secondary-text: #000000;
-  --o-cc3-btn-secondary-border: #f3f2f2;
+.btn-primary:hover {
+  background-color: var(--primary-hover) !important;
+  border-color: var(--primary-hover) !important;
+  color: white !important;
+}
 
-  /* Component Colors - CC4 */
-  --o-cc4-text: #ffffff;
-  --o-cc4-headings: #ffffff;
-  --o-cc4-h2: #ffffff;
-  --o-cc4-h3: #ffffff;
-  --o-cc4-h4: #ffffff;
-  --o-cc4-h5: #ffffff;
-  --o-cc4-h6: #ffffff;
-  --o-cc4-link: #2b6cb0;
-  --o-cc4-btn-primary-text: #ffffff;
-  --o-cc4-btn-primary-border: #2b6cb0;
-  --o-cc4-btn-secondary-text: #000000;
-  --o-cc4-btn-secondary-border: #f3f2f2;
+.btn-info {
+  color: #ffffff !important;
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+}
 
-  /* Component Colors - CC5 */
-  --o-cc5-text: #ffffff;
-  --o-cc5-h2: #ffffff;
-  --o-cc5-h3: #ffffff;
-  --o-cc5-h4: #ffffff;
-  --o-cc5-h5: #ffffff;
-  --o-cc5-h6: #ffffff;
-  --o-cc5-link: #4299e1;
-  --o-cc5-btn-primary: #2b6cb0;
-  --o-cc5-btn-primary-text: #ffffff;
-  --o-cc5-btn-primary-border: #2b6cb0;
-  --o-cc5-btn-secondary-text: #000000;
-  --o-cc5-btn-secondary-border: #f3f2f2;
+.btn-info:hover {
+  background-color: var(--primary-hover) !important;
+  border-color: var(--primary-hover) !important;
+  color: #ffffff !important;
+}
 
-  /* Layout */
-  --o-grid-gutter-width: 32px;
-  --o-md-container-max-width: 720px;
+.btn-secondary {
+  background-color: var(--secondary-color) !important;
+  border-color: var(--secondary-color) !important;
+  color: white !important;
+}
 
-  /* Website Editor */
-  --o-we-content-to-translate-color: rgba(255, 255, 90, 0.5);
-  --o-we-translated-content-color: rgba(120, 215, 110, 0.5);
+.btn-secondary:hover {
+  background-color: var(--secondary-hover) !important;
+  border-color: var(--secondary-hover) !important;
+  color: white !important;
+}
 
-  /* Typography */
-  --o-system-fonts: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    'Helvetica Neue', Ubuntu, 'Noto Sans', Arial, sans-serif,
-    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  --display-1-font-size: 5rem;
-  --display-2-font-size: 4.5rem;
-  --display-3-font-size: 4rem;
-  --display-4-font-size: 3.5rem;
-  --h1-font-size: 1.75rem;
-  --h2-font-size: 1.3125rem;
-  --h3-font-size: 1.1375rem;
-  --h4-font-size: 1.05rem;
-  --h5-font-size: 0.9625rem;
-  --h6-font-size: 0.875rem;
-  --font-size-base: 0.875rem;
-  --small-font-size: 0.8125rem;
-  --small-twelve-font-size: 0.75em;
-  --small-ten-font-size: 0.625em;
-  --small-eight-font-size: 0.5em;
+/* Links - Default state (blue) */
+a {
+  color: var(--primary-color) !important;
+}
+
+a:hover {
+  color: var(--primary-hover) !important;
+}
+
+/* Links in primary-colored areas (white) */
+.o_main_navbar a,
+.btn-primary a,
+.o_form_view .o_form_statusbar a,
+.o_list_view thead a,
+.o_calendar_view .o_calendar_widget .fc-timeGridWeek-view .fc-widget-header a {
+  color: white !important;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  color: white !important;
+  background-color: var(--primary-color) !important;
+}
+
+.o-dropdown--menu .dropdown-toggle.focus,
+.o-dropdown--menu .dropdown-item.focus {
+  color: white !important;
+  background-color: var(--primary-color) !important;
+}
+
+.dropdown-item {
+  color: white !important;
+}
+
+.o_main_navbar a:hover,
+.o_main_navbar .dropdown-menu a:hover,
+.btn-primary a:hover,
+.o_form_view .o_form_statusbar a:hover,
+.o_list_view thead a:hover,
+.o_calendar_view
+  .o_calendar_widget
+  .fc-timeGridWeek-view
+  .fc-widget-header
+  a:hover,
+.dropdown-item:hover {
+  color: white !important;
+  opacity: 0.9;
+}
+
+/* Form elements */
+.o_form_view
+  .o_form_statusbar
+  > .o_statusbar_status
+  > .o_arrow_button:not(.disabled) {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+}
+
+.o_form_view
+  .o_form_statusbar
+  > .o_statusbar_status
+  > .o_arrow_button:not(.disabled):hover {
+  background-color: var(--primary-hover) !important;
+  color: white !important;
+}
+
+/* List views */
+.o_list_view thead {
+  background-color: var(--primary-color) !important;
+}
+
+.o_list_view thead th {
+  color: white !important;
+}
+
+/* Kanban views */
+.o_kanban_view .o_kanban_record {
+  border-color: var(--primary-color) !important;
+}
+
+/* Calendar views */
+.o_calendar_view .o_calendar_widget .fc-timeGridWeek-view .fc-widget-header {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+}
+
+/* Custom Logo */
+.o_main_navbar .o_menu_brand {
+  background-image: url('/coralbound_theme/static/src/img/logo.png') !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  width: 200px !important; /* Adjust based on your logo size */
+  height: 40px !important; /* Adjust based on your logo size */
+}
+
+/* Hide default Odoo logo text */
+.o_main_navbar .o_menu_brand span {
+  display: none !important;
+}
+
+/* Dropdown menus */
+/* .o_main_navbar .dropdown-menu {
+  background-color: var(--primary-color) !important;
+} */
+
+/* .o_main_navbar .dropdown-menu > li > a {
+  color: white !important;
+}
+
+.o_main_navbar .dropdown-menu > li > a:hover {
+  background-color: var(--primary-hover) !important;
+  color: white !important;
+} */
+
+/* Search bar */
+.o_searchview {
+  border-color: var(--primary-color) !important;
+}
+
+Tabs .nav-tabs > li.active > a {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+}
+
+/* Progress bars */
+.progress-bar {
+  background-color: var(--primary-color) !important;
+}
+
+/* Badges */
+.badge {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+}
+
+/* Alerts */
+.alert-info {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+  color: white !important;
 }
