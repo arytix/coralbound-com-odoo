@@ -8,6 +8,7 @@
         - Custom logo
         - Primary and secondary colors
         - Custom styling
+        - Custom favicon
     """,
     'author': 'Coralbound',
     'website': 'https://coralbound.com',
@@ -16,6 +17,7 @@
     'assets': {
         'web.assets_backend': [
             'coralbound_theme/static/src/css/theme.css',
+            'coralbound_theme/static/src/css/favicon.css',
         ],
     },
     'installable': True,

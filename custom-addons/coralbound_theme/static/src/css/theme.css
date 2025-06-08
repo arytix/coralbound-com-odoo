@@ -50,13 +50,37 @@
   color: white !important;
 }
 
-/* Links */
+/* Links - Default state (blue) */
 a {
   color: var(--primary-color) !important;
 }
 
 a:hover {
   color: var(--primary-hover) !important;
+}
+
+/* Links in primary-colored areas (white) */
+.o_main_navbar a,
+.o_main_navbar .dropdown-menu a,
+.btn-primary a,
+.o_form_view .o_form_statusbar a,
+.o_list_view thead a,
+.o_calendar_view .o_calendar_widget .fc-timeGridWeek-view .fc-widget-header a {
+  color: white !important;
+}
+
+.o_main_navbar a:hover,
+.o_main_navbar .dropdown-menu a:hover,
+.btn-primary a:hover,
+.o_form_view .o_form_statusbar a:hover,
+.o_list_view thead a:hover,
+.o_calendar_view
+  .o_calendar_widget
+  .fc-timeGridWeek-view
+  .fc-widget-header
+  a:hover {
+  color: white !important;
+  opacity: 0.9;
 }
 
 /* Form elements */
