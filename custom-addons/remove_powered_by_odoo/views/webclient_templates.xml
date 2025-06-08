@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Remove "Powered by Odoo" footer -->
+        <template id="webclient_bootstrap_remove_footer" name="Remove Powered by Odoo Footer" inherit_id="web.webclient_bootstrap">
+            <xpath expr="//footer" position="replace">
+                <!-- This removes the entire footer containing "Powered by Odoo" -->
+            </xpath>
+        </template>
+
+        <!-- Alternative: Remove just the "Powered by" text if footer exists -->
+        <template id="login_remove_footer" name="Remove Login Footer" inherit_id="web.login_layout">
+            <xpath expr="//div[contains(@class, 'text-center')]/small[contains(text(), 'Powered by')]" position="replace">
+                <!-- This removes just the "Powered by Odoo" text from login page -->
+            </xpath>
+        </template>
+
+        <!-- Remove footer from database manager page -->
+        <template id="database_manager_remove_footer" name="Remove Database Manager Footer" inherit_id="web.database_manager">
+            <xpath expr="//div[contains(text(), 'Powered by')]" position="replace">
+                <!-- This removes "Powered by Odoo" from database manager -->
+            </xpath>
+        </template>
+    </data>
+</odoo>
