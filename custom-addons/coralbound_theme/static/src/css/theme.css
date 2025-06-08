@@ -144,6 +144,22 @@
   border: 1px solid transparent !important;
 }
 
+.o_doc_link {
+  color: var(--primary-color) !important;
+}
+
+a.oe_link {
+  color: var(--primary-color) !important;
+}
+
+a.d-block {
+  color: var(--primary-color) !important;
+}
+
+small > a {
+  color: var(--primary-color) !important;
+}
+
 .btn-primary {
   color: #ffffff;
   background-color: var(--primary-color) !important;
@@ -216,8 +232,4 @@ code {
 .form-check-input:checked {
   background-color: var(--primary-color) !important;
   border-color: var(--primary-color) !important;
-}
-
-a {
-  color: var(--primary-color) !important;
 }
