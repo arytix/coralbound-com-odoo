@@ -6,6 +6,12 @@
   --secondary-hover: #3182ce; /* Darker shade for hover states */
 }
 
+/* Text colors */
+.text-primary {
+  --color: RGBA(43, 108, 176, var(--text-opacity, 1));
+  color: var(--color) !important;
+}
+
 /* Main Navbar */
 .o_main_navbar {
   background-color: var(--primary-color) !important;
@@ -73,13 +79,15 @@ a:hover {
 
 /* Links in primary-colored areas (white) */
 .o_main_navbar a,
-.o_main_navbar .dropdown-menu a,
 .btn-primary a,
 .o_form_view .o_form_statusbar a,
 .o_list_view thead a,
-.o_calendar_view .o_calendar_widget .fc-timeGridWeek-view .fc-widget-header a,
-.dropdown-item {
+.o_calendar_view .o_calendar_widget .fc-timeGridWeek-view .fc-widget-header a {
   color: white !important;
+}
+
+.dropdown-item {
+  color: var(--primary-color) !important;
 }
 
 .o_main_navbar a:hover,
