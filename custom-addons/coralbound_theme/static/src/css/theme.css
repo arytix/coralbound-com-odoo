@@ -168,6 +168,14 @@
   border-color: var(--secondary-hover) !important;
 }
 
+.btn-link {
+  color: var(--primary-color) !important;
+}
+
+.btn-link:hover {
+  color: var(--primary-hover) !important;
+}
+
 code {
   color: var(--primary-color) !important;
 }
@@ -175,4 +183,41 @@ code {
 .text-primary {
   --color: RGBA(43, 108, 176, var(--text-opacity, 1));
   color: var(--color) !important;
+}
+
+.text-action {
+  --color: RGBA(43, 108, 176, var(--text-opacity, 1));
+  color: var(--color) !important;
+}
+
+.text-info {
+  --color: RGBA(43, 108, 176, var(--text-opacity, 1));
+  color: var(--color) !important;
+}
+
+.text-bg-info {
+  color: #ffffff !important;
+  background-color: RGBA(43, 108, 176, var(--text-opacity, 1)) !important;
+}
+
+.nav-link {
+  color: var(--primary-color) !important;
+}
+
+.o_base_settings_view
+  .o_form_renderer
+  .o_setting_container
+  .settings_tab
+  .selected {
+  background-color: var(--200) !important;
+  box-shadow: inset 2px 0 0 var(--primary-color) !important;
+}
+
+.form-check-input:checked {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+}
+
+a {
+  color: var(--primary-color) !important;
 }
