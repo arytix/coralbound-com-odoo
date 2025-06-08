@@ -1,9 +1,81 @@
-/* Primary Colors */
+/* Primary Colors and Theme Variables */
 :root {
-  --primary-color: #2b6cb0; /* Change this to your primary color */
-  --secondary-color: #4299e1; /* Change this to your secondary color */
-  --primary-hover: #2c5282; /* Darker shade for hover states */
-  --secondary-hover: #3182ce; /* Darker shade for hover states */
+  /* Base Colors */
+  --primary-color: #71639e;
+  --secondary-color: #4299e1;
+  --primary-hover: #5d4f85;
+  --secondary-hover: #3182ce;
+
+  /* Gray Scale */
+  --100: #f8f9fa;
+  --200: #e9ecef;
+  --300: #dee2e6;
+  --400: #ced4da;
+  --500: #adb5bd;
+  --600: #6c757d;
+  --700: #495057;
+  --800: #343a40;
+  --900: #212529;
+
+  /* White Opacity */
+  --white-85: rgba(255, 255, 255, 0.85);
+  --white-75: rgba(255, 255, 255, 0.75);
+  --white-50: rgba(255, 255, 255, 0.5);
+  --white-25: rgba(255, 255, 255, 0.25);
+
+  /* Black Opacity */
+  --black-75: rgba(0, 0, 0, 0.75);
+  --black-50: rgba(0, 0, 0, 0.5);
+  --black-25: rgba(0, 0, 0, 0.25);
+  --black-15: rgba(0, 0, 0, 0.15);
+
+  /* Theme Colors */
+  --primary: var(--primary-color);
+  --secondary: var(--secondary-color);
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffac00;
+  --danger: #dc3545;
+  --light: var(--100);
+  --dark: var(--900);
+
+  /* RGB Values */
+  --primary-rgb: 113, 99, 158;
+  --secondary-rgb: 66, 153, 225;
+  --success-rgb: 40, 167, 69;
+  --info-rgb: 23, 162, 184;
+  --warning-rgb: 255, 172, 0;
+  --danger-rgb: 220, 53, 69;
+  --light-rgb: 248, 249, 250;
+  --dark-rgb: 33, 37, 41;
+  --white-rgb: 255, 255, 255;
+  --black-rgb: 0, 0, 0;
+
+  /* Typography */
+  --body-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Ubuntu, 'Noto Sans', Arial, 'Odoo Unicode Support Noto',
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    'Noto Color Emoji';
+  --body-font-size: 0.875rem;
+  --body-font-weight: 400;
+  --body-line-height: 1.5;
+  --body-color: var(--700);
+  --body-bg: var(--100);
+
+  /* Component Colors */
+  --o-cc1-text: var(--900);
+  --o-cc1-headings: var(--900);
+  --o-cc1-link: var(--primary-color);
+  --o-cc1-btn-primary: var(--primary-color);
+  --o-cc1-btn-primary-text: #ffffff;
+  --o-cc1-btn-primary-border: var(--primary-color);
+  --o-cc1-btn-secondary: var(--200);
+  --o-cc1-btn-secondary-text: var(--900);
+  --o-cc1-btn-secondary-border: var(--200);
+
+  /* Grid and Layout */
+  --o-grid-gutter-width: 32px;
+  --o-md-container-max-width: 720px;
 }
 
 /* Main Navbar */
@@ -38,6 +110,18 @@
   color: white !important;
 }
 
+.btn-info {
+  color: #ffffff !important;
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+}
+
+.btn-info:hover {
+  background-color: var(--primary-hover) !important;
+  border-color: var(--primary-hover) !important;
+  color: #ffffff !important;
+}
+
 .btn-secondary {
   background-color: var(--secondary-color) !important;
   border-color: var(--secondary-color) !important;
@@ -65,7 +149,8 @@ a:hover {
 .btn-primary a,
 .o_form_view .o_form_statusbar a,
 .o_list_view thead a,
-.o_calendar_view .o_calendar_widget .fc-timeGridWeek-view .fc-widget-header a {
+.o_calendar_view .o_calendar_widget .fc-timeGridWeek-view .fc-widget-header a,
+.dropdown-item {
   color: white !important;
 }
 
@@ -78,7 +163,8 @@ a:hover {
   .o_calendar_widget
   .fc-timeGridWeek-view
   .fc-widget-header
-  a:hover {
+  a:hover,
+.dropdown-item:hover {
   color: white !important;
   opacity: 0.9;
 }
@@ -176,4 +262,10 @@ a:hover {
   background-color: var(--primary-color) !important;
   border-color: var(--primary-color) !important;
   color: white !important;
+}
+
+/* Text colors */
+.text-primary {
+  --color: RGBA(113, 99, 158, var(--text-opacity, 1));
+  color: rgb(255 255 255) !important;
 }

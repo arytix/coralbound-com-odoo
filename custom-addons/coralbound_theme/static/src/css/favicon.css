@@ -1,5 +1,5 @@
 /* Override favicon */
 link[rel='icon'],
 link[rel='shortcut icon'] {
-  content: url('/coralbound_theme/static/src/img/logo.png') !important;
+  href: url('/coralbound_theme/static/src/img/logo.png') !important;
 }
