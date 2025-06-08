@@ -1,6 +1,6 @@
 {
     'name': 'Coralbound Theme',
-    'version': '1.0',
+    'version': '1.0.0',
     'category': 'Website',
     'summary': 'Custom theme for Coralbound Odoo instance',
     'description': """
@@ -8,23 +8,16 @@
         - Custom logo
         - Primary and secondary colors
         - Custom styling
-        - Custom favicon
     """,
     'author': 'Coralbound',
     'website': 'https://coralbound.com',
     'license': 'LGPL-3',
     'depends': ['web'],
-    'data': [
-        'views/templates.xml',
-    ],
     'assets': {
         'web.assets_backend': [
             'coralbound_theme/static/src/css/theme.css',
         ],
     },
-    'controllers': [
-        'controllers/favicon_controller.py'
-    ],
     'installable': True,
     'application': True,
     'auto_install': False,
