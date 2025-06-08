@@ -14,7 +14,6 @@ mkdir -p /var/lib/odoo
 
 exec odoo \
     --http-port="${PORT}" \
-    --init=all \
     --without-demo=True \
     --proxy-mode \
     --db_host="${ODOO_DATABASE_HOST}" \
