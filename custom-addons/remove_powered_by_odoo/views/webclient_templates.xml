@@ -1,51 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-        <!-- Hide "Powered by Odoo" via CSS -->
-        <template id="hide_powered_by_css" name="Hide Powered By CSS" inherit_id="web.assets_backend">
-            <xpath expr="." position="inside">
-                <style>
-                    /* Hide any footer elements */
-                    .o_footer,
-                    .oe_footer,
-                    footer,
-                    .footer,
-                    [class*="powered"],
-                    [id*="powered"],
-                    /* Hide elements containing "Powered by" text */
-                    div:contains("Powered by"),
-                    small:contains("Powered by"),
-                    span:contains("Powered by"),
-                    p:contains("Powered by"),
-                    /* Hide specific Odoo footer classes */
-                    .o_webclient .o_footer,
-                    .o_main_content .o_footer {
-                        display: none !important;
-                        visibility: hidden !important;
-                        height: 0 !important;
-                        overflow: hidden !important;
-                    }
-                </style>
-            </xpath>
-        </template>
-
-        <!-- Also add CSS for login page -->
-        <template id="hide_powered_by_css_frontend" name="Hide Powered By CSS Frontend" inherit_id="web.assets_frontend">
-            <xpath expr="." position="inside">
-                <style>
-                    /* Hide "Powered by" on login and frontend pages */
-                    div:contains("Powered by"),
-                    small:contains("Powered by"),
-                    span:contains("Powered by"),
-                    p:contains("Powered by"),
-                    .o_footer,
-                    .oe_footer,
-                    footer {
-                        display: none !important;
-                        visibility: hidden !important;
-                    }
-                </style>
-            </xpath>
-        </template>
+        <!-- This file is intentionally minimal to avoid template conflicts -->
     </data>
 </odoo>

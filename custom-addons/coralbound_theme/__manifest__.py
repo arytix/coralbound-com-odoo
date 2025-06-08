@@ -1,24 +1,26 @@
 {
     'name': 'Coralbound Theme',
-    'version': '1.2.0',
-    'category': 'Website',
-    'summary': 'Custom theme for Coralbound Odoo instance',
+    'version': '17.0.1.0.0',
+    'category': 'Themes/Backend',
+    'summary': 'Custom theme for Coralbound with primary blue colors and custom navbar',
     'description': """
-        This module customizes the Odoo interface with Coralbound branding:
-        - Custom logo
-        - Primary and secondary colors
-        - Custom styling
+        Custom Odoo theme for Coralbound featuring:
+        - Custom primary blue color scheme
+        - Custom navbar styling
+        - Modern UI improvements
+        - Remove "Powered by Odoo" footer
     """,
     'author': 'Coralbound',
     'website': 'https://coralbound.com',
     'license': 'LGPL-3',
-    'depends': ['web'],
+    'depends': ['web', 'base'],
     'assets': {
         'web.assets_backend': [
             'coralbound_theme/static/src/css/theme.css',
+            'coralbound_theme/static/src/css/remove_footer.css',
         ],
     },
     'installable': True,
-    'application': True,
+    'application': False,
     'auto_install': False,
 }
