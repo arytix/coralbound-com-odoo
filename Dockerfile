@@ -11,6 +11,10 @@ USER 0
 RUN apt-get -y update && apt-get install -y --no-install-recommends locales netcat-openbsd \
     && locale-gen ${LOCALE}
 
+# Create and set permissions for data directory
+RUN mkdir -p /var/lib/odoo && \
+    chown -R odoo:odoo /var/lib/odoo
+
 WORKDIR /app
 
 COPY --chmod=755 entrypoint.sh ./
