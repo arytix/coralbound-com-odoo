@@ -1,4 +1,4 @@
-# Coralbound Odoo Instance
+# Coralbound Odoo Instance - 1.3.0
 
 This repository contains the Docker configuration and custom modules for Coralbound's Odoo instance deployed on Railway.
 
