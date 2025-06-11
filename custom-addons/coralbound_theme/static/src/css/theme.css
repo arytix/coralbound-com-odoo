@@ -1,21 +1,21 @@
 /* Primary Colors and Theme Variables */
 :root {
   /* Base Colors */
-  --primary-color: #2b6cb0 !important; /* Change this to your primary color */
-  --secondary-color: #4299e1 !important; /* Change this to your secondary color */
-  --primary-hover: #2c5282 !important; /* Darker shade for hover states */
-  --secondary-hover: #3182ce !important; /* Darker shade for hover states */
+  --primary-color: #afe4ef !important; /* Coralbound Primary */
+  --secondary-color: #d7dada !important; /* Coralbound Secondary */
+  --primary-hover: #124d59 !important; /* Coralbound Primary Foreground */
+  --secondary-hover: #3d4142 !important; /* Coralbound Secondary Foreground */
 
   /* Gray Scale */
-  --100: #f8f9fa !important;
-  --200: #e9ecef !important;
-  --300: #dee2e6 !important;
-  --400: #ced4da !important;
-  --500: #adb5bd !important;
-  --600: #6c757d !important;
-  --700: #495057 !important;
-  --800: #343a40 !important;
-  --900: #212529 !important;
+  --100: #fcfcfc !important; /* Light Popover/Card */
+  --200: #f0f4f4 !important; /* Light Border/Input */
+  --300: #e6f4f7 !important; /* Light Muted */
+  --400: #d7dada !important; /* Light Secondary */
+  --500: #39484c !important; /* Light Muted Foreground */
+  --600: #3d4142 !important; /* Secondary Foreground */
+  --700: #124d59 !important; /* Primary Foreground */
+  --800: #020708 !important; /* Light Foreground */
+  --900: #071518 !important; /* Dark Background */
 
   /* White Opacity */
   --white-85: rgba(255, 255, 255, 0.85) !important;
@@ -24,41 +24,41 @@
   --white-25: rgba(255, 255, 255, 0.25) !important;
 
   /* Black Opacity */
-  --black-75: rgba(0, 0, 0, 0.75) !important;
-  --black-50: rgba(0, 0, 0, 0.5) !important;
-  --black-25: rgba(0, 0, 0, 0.25) !important;
-  --black-15: rgba(0, 0, 0, 0.15) !important;
+  --black-75: rgba(2, 7, 8, 0.75) !important;
+  --black-50: rgba(2, 7, 8, 0.5) !important;
+  --black-25: rgba(2, 7, 8, 0.25) !important;
+  --black-15: rgba(2, 7, 8, 0.15) !important;
 
   /* Component Colors - CC1 */
-  --o-cc1-text: #000000 !important;
-  --o-cc1-headings: #000000 !important;
-  --o-cc1-h2: #000000 !important;
-  --o-cc1-h3: #000000 !important;
-  --o-cc1-h4: #000000 !important;
-  --o-cc1-h5: #000000 !important;
-  --o-cc1-h6: #000000 !important;
-  --o-cc1-link: #2b6cb0 !important;
-  --o-cc1-btn-primary: #2b6cb0 !important;
-  --o-cc1-btn-primary-text: #ffffff !important;
-  --o-cc1-btn-primary-border: #2b6cb0 !important;
-  --o-cc1-btn-secondary: #dee2e6 !important;
-  --o-cc1-btn-secondary-text: #000000 !important;
-  --o-cc1-btn-secondary-border: #dee2e6 !important;
+  --o-cc1-text: #020708 !important;
+  --o-cc1-headings: #020708 !important;
+  --o-cc1-h2: #020708 !important;
+  --o-cc1-h3: #020708 !important;
+  --o-cc1-h4: #020708 !important;
+  --o-cc1-h5: #020708 !important;
+  --o-cc1-h6: #020708 !important;
+  --o-cc1-link: #124d59 !important;
+  --o-cc1-btn-primary: #afe4ef !important;
+  --o-cc1-btn-primary-text: #124d59 !important;
+  --o-cc1-btn-primary-border: #afe4ef !important;
+  --o-cc1-btn-secondary: #d7dada !important;
+  --o-cc1-btn-secondary-text: #3d4142 !important;
+  --o-cc1-btn-secondary-border: #d7dada !important;
 
   /* Component Colors - CC2 */
-  --o-cc2-text: #000000 !important;
-  --o-cc2-h2: #111827 !important;
-  --o-cc2-h3: #111827 !important;
-  --o-cc2-h4: #111827 !important;
-  --o-cc2-h5: #111827 !important;
-  --o-cc2-h6: #111827 !important;
-  --o-cc2-link: #2c5282 !important;
-  --o-cc2-btn-primary: #2b6cb0 !important;
-  --o-cc2-btn-primary-text: #ffffff !important;
-  --o-cc2-btn-primary-border: #2b6cb0 !important;
-  --o-cc2-btn-secondary: #dee2e6 !important;
-  --o-cc2-btn-secondary-text: #000000 !important;
-  --o-cc2-btn-secondary-border: #dee2e6 !important;
+  --o-cc2-text: #020708 !important;
+  --o-cc2-h2: #020708 !important;
+  --o-cc2-h3: #020708 !important;
+  --o-cc2-h4: #020708 !important;
+  --o-cc2-h5: #020708 !important;
+  --o-cc2-h6: #020708 !important;
+  --o-cc2-link: #124d59 !important;
+  --o-cc2-btn-primary: #afe4ef !important;
+  --o-cc2-btn-primary-text: #124d59 !important;
+  --o-cc2-btn-primary-border: #afe4ef !important;
+  --o-cc2-btn-secondary: #d7dada !important;
+  --o-cc2-btn-secondary-text: #3d4142 !important;
+  --o-cc2-btn-secondary-border: #d7dada !important;
 
   /* Component Colors - CC3 */
   --o-cc3-text: #ffffff !important;
@@ -68,12 +68,12 @@
   --o-cc3-h4: #ffffff !important;
   --o-cc3-h5: #ffffff !important;
   --o-cc3-h6: #ffffff !important;
-  --o-cc3-link: #4299e1 !important;
-  --o-cc3-btn-primary: #2b6cb0 !important;
-  --o-cc3-btn-primary-text: #ffffff !important;
-  --o-cc3-btn-primary-border: #2b6cb0 !important;
-  --o-cc3-btn-secondary-text: #000000 !important;
-  --o-cc3-btn-secondary-border: #f3f2f2 !important;
+  --o-cc3-link: #afe4ef !important;
+  --o-cc3-btn-primary: #afe4ef !important;
+  --o-cc3-btn-primary-text: #124d59 !important;
+  --o-cc3-btn-primary-border: #afe4ef !important;
+  --o-cc3-btn-secondary-text: #020708 !important;
+  --o-cc3-btn-secondary-border: #fcfcfc !important;
 
   /* Component Colors - CC4 */
   --o-cc4-text: #ffffff !important;
@@ -83,11 +83,11 @@
   --o-cc4-h4: #ffffff !important;
   --o-cc4-h5: #ffffff !important;
   --o-cc4-h6: #ffffff !important;
-  --o-cc4-link: #2b6cb0 !important;
-  --o-cc4-btn-primary-text: #ffffff !important;
-  --o-cc4-btn-primary-border: #2b6cb0 !important;
-  --o-cc4-btn-secondary-text: #000000 !important;
-  --o-cc4-btn-secondary-border: #f3f2f2 !important;
+  --o-cc4-link: #afe4ef !important;
+  --o-cc4-btn-primary-text: #124d59 !important;
+  --o-cc4-btn-primary-border: #afe4ef !important;
+  --o-cc4-btn-secondary-text: #020708 !important;
+  --o-cc4-btn-secondary-border: #fcfcfc !important;
 
   /* Component Colors - CC5 */
   --o-cc5-text: #ffffff !important;
@@ -96,12 +96,12 @@
   --o-cc5-h4: #ffffff !important;
   --o-cc5-h5: #ffffff !important;
   --o-cc5-h6: #ffffff !important;
-  --o-cc5-link: #4299e1 !important;
-  --o-cc5-btn-primary: #2b6cb0 !important;
-  --o-cc5-btn-primary-text: #ffffff !important;
-  --o-cc5-btn-primary-border: #2b6cb0 !important;
-  --o-cc5-btn-secondary-text: #000000 !important;
-  --o-cc5-btn-secondary-border: #f3f2f2 !important;
+  --o-cc5-link: #afe4ef !important;
+  --o-cc5-btn-primary: #afe4ef !important;
+  --o-cc5-btn-primary-text: #124d59 !important;
+  --o-cc5-btn-primary-border: #afe4ef !important;
+  --o-cc5-btn-secondary-text: #020708 !important;
+  --o-cc5-btn-secondary-border: #fcfcfc !important;
 
   /* Layout */
   --o-grid-gutter-width: 32px !important;
@@ -145,23 +145,23 @@
 }
 
 .o_doc_link {
-  color: var(--primary-color) !important;
+  color: var(--primary-hover) !important;
 }
 
 a.oe_link {
-  color: var(--primary-color) !important;
+  color: var(--primary-hover) !important;
 }
 
 a.d-block {
-  color: var(--primary-color) !important;
+  color: var(--primary-hover) !important;
 }
 
 small > a {
-  color: var(--primary-color) !important;
+  color: var(--primary-hover) !important;
 }
 
 .btn-primary {
-  color: #ffffff;
+  color: #124d59;
   background-color: var(--primary-color) !important;
   border-color: var(--primary-color) !important;
 }
@@ -173,7 +173,7 @@ small > a {
 }
 
 .btn-info {
-  color: #ffffff;
+  color: #3d4142;
   background-color: var(--secondary-color) !important;
   border-color: var(--secondary-color) !important;
 }
@@ -185,39 +185,39 @@ small > a {
 }
 
 .btn-link {
-  color: var(--primary-color) !important;
-}
-
-.btn-link:hover {
   color: var(--primary-hover) !important;
 }
 
+.btn-link:hover {
+  color: var(--700) !important;
+}
+
 code {
-  color: var(--primary-color) !important;
+  color: var(--primary-hover) !important;
 }
 
 .text-primary {
-  --color: RGBA(43, 108, 176, var(--text-opacity, 1));
+  --color: RGBA(175, 228, 239, var(--text-opacity, 1));
   color: var(--color) !important;
 }
 
 .text-action {
-  --color: RGBA(43, 108, 176, var(--text-opacity, 1));
+  --color: RGBA(18, 77, 89, var(--text-opacity, 1));
   color: var(--color) !important;
 }
 
 .text-info {
-  --color: RGBA(43, 108, 176, var(--text-opacity, 1));
+  --color: RGBA(175, 228, 239, var(--text-opacity, 1));
   color: var(--color) !important;
 }
 
 .text-bg-info {
-  color: #ffffff !important;
-  background-color: RGBA(43, 108, 176, var(--text-opacity, 1)) !important;
+  color: #124d59 !important;
+  background-color: RGBA(175, 228, 239, var(--text-opacity, 1)) !important;
 }
 
 .nav-link {
-  color: var(--primary-color) !important;
+  color: var(--primary-hover) !important;
 }
 
 .o_base_settings_view
