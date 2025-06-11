@@ -1,10 +1,10 @@
 /* Primary Colors and Theme Variables */
 :root {
   /* Base Colors */
-  --primary-color: #afe4ef !important; /* Coralbound Primary */
-  --secondary-color: #d7dada !important; /* Coralbound Secondary */
-  --primary-hover: #124d59 !important; /* Coralbound Primary Foreground */
-  --secondary-hover: #3d4142 !important; /* Coralbound Secondary Foreground */
+  --primary-color: #124d59 !important; /* Coralbound Primary */
+  --secondary-color: #49acc0 !important; /* Coralbound Secondary */
+  --primary-hover: #afe4ef !important; /* Coralbound Primary Foreground */
+  --secondary-hover: #d7dada !important; /* Coralbound Secondary Foreground */
 
   /* Gray Scale */
   --100: #fcfcfc !important; /* Light Popover/Card */
