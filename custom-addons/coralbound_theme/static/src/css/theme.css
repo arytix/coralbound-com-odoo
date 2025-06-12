@@ -281,3 +281,8 @@ code {
   color: var(--100) !important;
   background: var(--primary-color) !important;
 }
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
