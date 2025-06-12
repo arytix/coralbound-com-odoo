@@ -1,21 +1,21 @@
 /* Primary Colors and Theme Variables */
 :root {
   /* Base Colors */
-  --primary-color: #124d59 !important; /* Coralbound Primary */
-  --secondary-color: #49acc0 !important; /* Coralbound Secondary */
-  --primary-hover: #afe4ef !important; /* Coralbound Primary Foreground */
-  --secondary-hover: #d7dada !important; /* Coralbound Secondary Foreground */
+  --primary-color: #ff6c5c !important; /* Coralbound Primary */
+  --secondary-color: #f5f5f5 !important; /* Coralbound Secondary */
+  --primary-hover: #fafafa !important; /* Coralbound Primary Foreground */
+  --secondary-hover: #171717 !important; /* Coralbound Secondary Foreground */
 
   /* Gray Scale */
-  --100: #fcfcfc !important; /* Light Popover/Card */
-  --200: #f0f4f4 !important; /* Light Border/Input */
-  --300: #e6f4f7 !important; /* Light Muted */
-  --400: #d7dada !important; /* Light Secondary */
-  --500: #39484c !important; /* Light Muted Foreground */
-  --600: #3d4142 !important; /* Secondary Foreground */
-  --700: #124d59 !important; /* Primary Foreground */
-  --800: #020708 !important; /* Light Foreground */
-  --900: #071518 !important; /* Dark Background */
+  --100: #ffffff !important; /* Light Popover/Card */
+  --200: #e5e5e5 !important; /* Light Border/Input */
+  --300: #f5f5f5 !important; /* Light Muted */
+  --400: #f5f5f5 !important; /* Light Secondary */
+  --500: #737373 !important; /* Light Muted Foreground */
+  --600: #171717 !important; /* Secondary Foreground */
+  --700: #fafafa !important; /* Primary Foreground */
+  --800: #0a0a0a !important; /* Light Foreground */
+  --900: #0a0a0a !important; /* Dark Background */
 
   /* White Opacity */
   --white-85: rgba(255, 255, 255, 0.85) !important;
@@ -24,84 +24,84 @@
   --white-25: rgba(255, 255, 255, 0.25) !important;
 
   /* Black Opacity */
-  --black-75: rgba(2, 7, 8, 0.75) !important;
-  --black-50: rgba(2, 7, 8, 0.5) !important;
-  --black-25: rgba(2, 7, 8, 0.25) !important;
-  --black-15: rgba(2, 7, 8, 0.15) !important;
+  --black-75: rgba(10, 10, 10, 0.75) !important;
+  --black-50: rgba(10, 10, 10, 0.5) !important;
+  --black-25: rgba(10, 10, 10, 0.25) !important;
+  --black-15: rgba(10, 10, 10, 0.15) !important;
 
   /* Component Colors - CC1 */
-  --o-cc1-text: #020708 !important;
-  --o-cc1-headings: #020708 !important;
-  --o-cc1-h2: #020708 !important;
-  --o-cc1-h3: #020708 !important;
-  --o-cc1-h4: #020708 !important;
-  --o-cc1-h5: #020708 !important;
-  --o-cc1-h6: #020708 !important;
-  --o-cc1-link: #124d59 !important;
-  --o-cc1-btn-primary: #afe4ef !important;
-  --o-cc1-btn-primary-text: #124d59 !important;
-  --o-cc1-btn-primary-border: #afe4ef !important;
-  --o-cc1-btn-secondary: #d7dada !important;
-  --o-cc1-btn-secondary-text: #3d4142 !important;
-  --o-cc1-btn-secondary-border: #d7dada !important;
+  --o-cc1-text: var(--800) !important;
+  --o-cc1-headings: var(--800) !important;
+  --o-cc1-h2: var(--800) !important;
+  --o-cc1-h3: var(--800) !important;
+  --o-cc1-h4: var(--800) !important;
+  --o-cc1-h5: var(--800) !important;
+  --o-cc1-h6: var(--800) !important;
+  --o-cc1-link: var(--primary-color) !important;
+  --o-cc1-btn-primary: var(--primary-color) !important;
+  --o-cc1-btn-primary-text: var(--700) !important;
+  --o-cc1-btn-primary-border: var(--primary-color) !important;
+  --o-cc1-btn-secondary: var(--secondary-color) !important;
+  --o-cc1-btn-secondary-text: var(--600) !important;
+  --o-cc1-btn-secondary-border: var(--secondary-color) !important;
 
   /* Component Colors - CC2 */
-  --o-cc2-text: #020708 !important;
-  --o-cc2-h2: #020708 !important;
-  --o-cc2-h3: #020708 !important;
-  --o-cc2-h4: #020708 !important;
-  --o-cc2-h5: #020708 !important;
-  --o-cc2-h6: #020708 !important;
-  --o-cc2-link: #124d59 !important;
-  --o-cc2-btn-primary: #afe4ef !important;
-  --o-cc2-btn-primary-text: #124d59 !important;
-  --o-cc2-btn-primary-border: #afe4ef !important;
-  --o-cc2-btn-secondary: #d7dada !important;
-  --o-cc2-btn-secondary-text: #3d4142 !important;
-  --o-cc2-btn-secondary-border: #d7dada !important;
+  --o-cc2-text: var(--800) !important;
+  --o-cc2-h2: var(--800) !important;
+  --o-cc2-h3: var(--800) !important;
+  --o-cc2-h4: var(--800) !important;
+  --o-cc2-h5: var(--800) !important;
+  --o-cc2-h6: var(--800) !important;
+  --o-cc2-link: var(--primary-color) !important;
+  --o-cc2-btn-primary: var(--primary-color) !important;
+  --o-cc2-btn-primary-text: var(--700) !important;
+  --o-cc2-btn-primary-border: var(--primary-color) !important;
+  --o-cc2-btn-secondary: var(--secondary-color) !important;
+  --o-cc2-btn-secondary-text: var(--600) !important;
+  --o-cc2-btn-secondary-border: var(--secondary-color) !important;
 
   /* Component Colors - CC3 */
-  --o-cc3-text: #ffffff !important;
-  --o-cc3-headings: #ffffff !important;
-  --o-cc3-h2: #ffffff !important;
-  --o-cc3-h3: #ffffff !important;
-  --o-cc3-h4: #ffffff !important;
-  --o-cc3-h5: #ffffff !important;
-  --o-cc3-h6: #ffffff !important;
-  --o-cc3-link: #afe4ef !important;
-  --o-cc3-btn-primary: #afe4ef !important;
-  --o-cc3-btn-primary-text: #124d59 !important;
-  --o-cc3-btn-primary-border: #afe4ef !important;
-  --o-cc3-btn-secondary-text: #020708 !important;
-  --o-cc3-btn-secondary-border: #fcfcfc !important;
+  --o-cc3-text: var(--700) !important;
+  --o-cc3-headings: var(--700) !important;
+  --o-cc3-h2: var(--700) !important;
+  --o-cc3-h3: var(--700) !important;
+  --o-cc3-h4: var(--700) !important;
+  --o-cc3-h5: var(--700) !important;
+  --o-cc3-h6: var(--700) !important;
+  --o-cc3-link: var(--primary-color) !important;
+  --o-cc3-btn-primary: var(--primary-color) !important;
+  --o-cc3-btn-primary-text: var(--700) !important;
+  --o-cc3-btn-primary-border: var(--primary-color) !important;
+  --o-cc3-btn-secondary-text: var(--800) !important;
+  --o-cc3-btn-secondary-border: var(--100) !important;
 
   /* Component Colors - CC4 */
-  --o-cc4-text: #ffffff !important;
-  --o-cc4-headings: #ffffff !important;
-  --o-cc4-h2: #ffffff !important;
-  --o-cc4-h3: #ffffff !important;
-  --o-cc4-h4: #ffffff !important;
-  --o-cc4-h5: #ffffff !important;
-  --o-cc4-h6: #ffffff !important;
-  --o-cc4-link: #afe4ef !important;
-  --o-cc4-btn-primary-text: #124d59 !important;
-  --o-cc4-btn-primary-border: #afe4ef !important;
-  --o-cc4-btn-secondary-text: #020708 !important;
-  --o-cc4-btn-secondary-border: #fcfcfc !important;
+  --o-cc4-text: var(--700) !important;
+  --o-cc4-headings: var(--700) !important;
+  --o-cc4-h2: var(--700) !important;
+  --o-cc4-h3: var(--700) !important;
+  --o-cc4-h4: var(--700) !important;
+  --o-cc4-h5: var(--700) !important;
+  --o-cc4-h6: var(--700) !important;
+  --o-cc4-link: var(--primary-color) !important;
+  --o-cc4-btn-primary-text: var(--700) !important;
+  --o-cc4-btn-primary-border: var(--primary-color) !important;
+  --o-cc4-btn-secondary-text: var(--800) !important;
+  --o-cc4-btn-secondary-border: var(--100) !important;
 
   /* Component Colors - CC5 */
-  --o-cc5-text: #ffffff !important;
-  --o-cc5-h2: #ffffff !important;
-  --o-cc5-h3: #ffffff !important;
-  --o-cc5-h4: #ffffff !important;
-  --o-cc5-h5: #ffffff !important;
-  --o-cc5-h6: #ffffff !important;
-  --o-cc5-link: #afe4ef !important;
-  --o-cc5-btn-primary: #afe4ef !important;
-  --o-cc5-btn-primary-text: #124d59 !important;
-  --o-cc5-btn-primary-border: #afe4ef !important;
-  --o-cc5-btn-secondary-text: #020708 !important;
-  --o-cc5-btn-secondary-border: #fcfcfc !important;
+  --o-cc5-text: var(--700) !important;
+  --o-cc5-h2: var(--700) !important;
+  --o-cc5-h3: var(--700) !important;
+  --o-cc5-h4: var(--700) !important;
+  --o-cc5-h5: var(--700) !important;
+  --o-cc5-h6: var(--700) !important;
+  --o-cc5-link: var(--primary-color) !important;
+  --o-cc5-btn-primary: var(--primary-color) !important;
+  --o-cc5-btn-primary-text: var(--700) !important;
+  --o-cc5-btn-primary-border: var(--primary-color) !important;
+  --o-cc5-btn-secondary-text: var(--800) !important;
+  --o-cc5-btn-secondary-border: var(--100) !important;
 
   /* Layout */
   --o-grid-gutter-width: 32px !important;
@@ -161,31 +161,31 @@ small > a {
 }
 
 .btn-primary {
-  color: #124d59;
+  color: var(--700);
   background-color: var(--primary-color) !important;
   border-color: var(--primary-color) !important;
 }
 
 .btn-primary:hover {
-  color: #ffffff;
+  color: var(--100);
   background-color: var(--primary-hover) !important;
   border-color: var(--primary-hover) !important;
 }
 
 .btn-info {
-  color: #3d4142;
+  color: var(--600);
   background-color: var(--secondary-color) !important;
   border-color: var(--secondary-color) !important;
 }
 
 .btn-info:hover {
-  color: #ffffff;
+  color: var(--100);
   background-color: var(--secondary-hover) !important;
   border-color: var(--secondary-hover) !important;
 }
 
 .btn-link {
-  color: var(--primary-hover) !important;
+  color: var(--primary-color) !important;
 }
 
 .btn-link:hover {
@@ -193,31 +193,31 @@ small > a {
 }
 
 code {
-  color: var(--primary-hover) !important;
+  color: var(--primary-color) !important;
 }
 
 .text-primary {
-  --color: RGBA(175, 228, 239, var(--text-opacity, 1));
+  --color: var(--primary-color);
   color: var(--color) !important;
 }
 
 .text-action {
-  --color: RGBA(18, 77, 89, var(--text-opacity, 1));
+  --color: var(--primary-color);
   color: var(--color) !important;
 }
 
 .text-info {
-  --color: RGBA(175, 228, 239, var(--text-opacity, 1));
+  --color: var(--primary-color);
   color: var(--color) !important;
 }
 
 .text-bg-info {
-  color: #124d59 !important;
-  background-color: RGBA(175, 228, 239, var(--text-opacity, 1)) !important;
+  color: var(--700) !important;
+  background-color: var(--primary-color) !important;
 }
 
 .nav-link {
-  color: var(--primary-hover) !important;
+  color: var(--primary-color) !important;
 }
 
 .o_base_settings_view

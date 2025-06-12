@@ -1,12 +1,19 @@
 <style>
   /* Coralbound ERP Custom Login Styles */
   :root {
-    --cb-primary: #124d59;
-    --cb-primary-dark: #124d59;
-    --cb-primary-light: #49acc0;
-    --cb-bg: #f8fafc;
-    --cb-text: #020708;
-    --cb-border: #f0f4f4;
+    --cb-primary: #ff6c5c;
+    --cb-primary-dark: #ff6c5c;
+    --cb-primary-light: #ff9b80;
+    --cb-bg: #ffffff;
+    --cb-text: #0a0a0a;
+    --cb-border: #e5e5e5;
+    --cb-text-light: #fafafa;
+    --cb-text-white: #ffffff;
+    --cb-placeholder: #737373;
+    --cb-secondary: #f5f5f5;
+    --cb-secondary-text: #171717;
+    --cb-shadow-color: rgba(255, 108, 92, 0.15);
+    --cb-shadow-color-light: rgba(255, 108, 92, 0.12);
   }
 
   footer#bottom,
@@ -28,10 +35,10 @@
   .oe_login_form button,
   .btn_cta {
     background: var(--cb-primary) !important;
-    color: var(--cb-bg) !important;
+    color: var(--cb-text-light) !important;
     border: none !important;
     border-radius: 6px !important;
-    box-shadow: 0 2px 8px rgba(175, 228, 239, 0.15);
+    box-shadow: 0 2px 8px var(--cb-shadow-color);
     transition: background 0.2s;
   }
   .btn:hover,
@@ -40,7 +47,7 @@
   .oe_login_form button:hover,
   .btn_cta:hover {
     background: var(--cb-primary-light) !important;
-    color: #fff !important;
+    color: var(--cb-text-white) !important;
   }
   .btn-outline-secondary {
     background: transparent !important;
@@ -49,7 +56,7 @@
   }
   .btn-outline-secondary:hover {
     background: var(--cb-primary-dark) !important;
-    color: #fff !important;
+    color: var(--cb-text-white) !important;
   }
 
   /* Inputs */
@@ -59,7 +66,7 @@
   .form-control {
     border: 1.5px solid var(--cb-border) !important;
     border-radius: 6px !important;
-    background: #fff !important;
+    background: var(--cb-text-white) !important;
     color: var(--cb-text) !important;
     box-shadow: none !important;
     transition: border 0.2s;
@@ -98,9 +105,9 @@
   /* Login form container with Coralbound header */
   .oe_website_login_container {
     position: relative;
-    background: #fff !important;
+    background: var(--cb-text-white) !important;
     border-radius: 12px;
-    box-shadow: 0 4px 24px rgba(175, 228, 239, 0.12);
+    box-shadow: 0 4px 24px var(--cb-shadow-color-light);
     padding: 10rem 3rem 2rem 3rem !important;
     max-width: 400px;
     margin: 3rem auto 2rem auto;
@@ -130,7 +137,7 @@
     left: 0;
     right: 0;
     background: var(--cb-primary-dark);
-    color: #fff;
+    color: var(--cb-text-white);
     text-align: center;
     font-size: 1.5rem;
     font-weight: 600;
@@ -186,43 +193,43 @@
 
   /* Misc */
   ::-webkit-input-placeholder {
-    color: #b0b8c1;
+    color: var(--cb-placeholder);
   }
   ::-moz-placeholder {
-    color: #b0b8c1;
+    color: var(--cb-placeholder);
   }
   :-ms-input-placeholder {
-    color: #b0b8c1;
+    color: var(--cb-placeholder);
   }
   ::placeholder {
-    color: #b0b8c1;
+    color: var(--cb-placeholder);
   }
 
   /* Copyright and footer */
   .o_footer_copyright,
   .o_footer {
     background: var(--cb-primary-dark) !important;
-    color: #fff !important;
+    color: var(--cb-text-white) !important;
   }
   .o_footer_copyright a,
   .o_footer a {
-    color: #fff !important;
+    color: var(--cb-text-white) !important;
     text-decoration: underline;
   }
 
   /* Social icons */
   .s_social_media a i {
-    background: #fff !important;
+    background: var(--cb-text-white) !important;
     color: var(--cb-primary-dark) !important;
     border-radius: 50%;
     padding: 0.3em;
     font-size: 1.2em;
-    box-shadow: 0 2px 8px rgba(175, 228, 239, 0.15);
+    box-shadow: 0 2px 8px var(--cb-shadow-color);
     transition: background 0.2s, color 0.2s;
   }
   .s_social_media a:hover i {
     background: var(--cb-primary-dark) !important;
-    color: #fff !important;
+    color: var(--cb-text-white) !important;
   }
 
   /* Responsive tweaks */
